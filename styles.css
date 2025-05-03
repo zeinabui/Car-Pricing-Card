@@ -1,0 +1,145 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: sans-serif;
+
+}
+
+.product {
+     width: 70%;
+     border: 3px solid rgb(203, 95, 95) ;
+     margin: 64px auto;
+     position: relative;
+     display: grid;
+     grid-template-columns: 200px 1fr 1fr;
+     column-gap: 40px;
+}
+
+.p-title {
+     font-size: 18px;
+     font-weight: 700;
+     padding: 12px 8px;
+     background-color: rgb(240, 215, 215);
+     color: rgb(79, 35, 35);
+     grid-column: 1/-1;
+     text-align: center;
+}
+
+.p-img {
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+}
+
+.price {
+     font-size: 14px;
+     font-weight: 600;
+     color:rgb(49, 40, 40);
+}
+
+.label {
+     color: rgb(49, 40, 40);
+     font-size: 14px;
+     font-weight: 500;
+     text-transform: uppercase;
+}
+
+.price-wrapper {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 12px;
+}
+
+.description {
+     letter-spacing: 0.5px;
+     line-height: 1.4;
+     font-size: 16px;
+     color: rgb(49, 40, 40);
+     font-weight: 400;
+     margin-bottom: 10px;
+}
+
+.more-info {
+     color: rgb(203, 95, 95);
+     /* text-decoration: none; */
+     font-size: 14px;
+}
+
+
+.add-to-cart {
+     grid-column: 1/-1;
+     background-color: rgb(49, 40, 40);
+     color: aliceblue;
+     border: none;
+     padding: 10px 8px;
+     font-size: 16px;
+     font-weight: 400;
+
+     &:hover {
+          font-weight: 600;
+          background-color: rgb(240, 215, 215);
+          color: rgb(49, 40, 40);
+     }
+}
+
+
+.colors {
+     content: '';
+     height: 15px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+     column-gap: 10px; 
+     width: fit-content;
+     margin-top: 16px;
+}
+
+.color-blue {
+     width: 15px;
+     background-color: blue;
+}
+
+.color-yellow {
+     width: 15px;
+     background-color: yellow;
+}
+
+.color-purple {
+     width: 15px;
+     background-color: purple;
+}
+
+.color-red {
+     width: 15px;
+     background-color: red;
+}
+
+.color-green {
+     width: 15px;
+     background-color: green;
+}
+
+
+.p-info, .p-details {
+     margin-top: 24px;
+
+}
+
+.p-detail {
+     font-size: 16px;
+     font-weight: 700;
+     margin-bottom: 10px;
+}
+
+.details li {
+     list-style: square;
+     list-style-position: inside;
+     font-size: 14px;
+     font-weight: 400;
+     color: rgb(49, 40, 40);
+     line-height: 2;
+     padding-right: 12px;
+}
